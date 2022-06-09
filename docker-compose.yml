@@ -1,7 +1,7 @@
 version: '3'
 services:
   jinux2:
-    image: ${DOCKER_USER_ID}/jenkinstest:latest
+    image: ${DOCKER_USER_ID}/jenkinstest
     container_name: jinux2
     
     build:

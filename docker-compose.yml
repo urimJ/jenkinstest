@@ -1,8 +1,8 @@
 version: '3'
 services:
-  jinux:
-    image: ${DOCKER_USER_ID}/jinux-assignment4:latest
-    container_name: jinux
+  jenkins:
+    image: ufrl128/jenkinstest:latest
+    container_name: jenkins
     
     build:
        context: .

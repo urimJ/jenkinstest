@@ -2,12 +2,13 @@ version: '3'
 services:
 
   jinux2:
-    image: ufrl128/jenkinstest:latest
+    image: ${DOCKER_USER_ID}/jenkinstest:${BUILD_NUMBER}
     container_name: jinux
     build:
        context: .
 
   production:
+    image: ${DOCKER_USER_ID}/jenkinstest:${BUILD_NUMBER}
     restart: always
     ports:
       - 80:80

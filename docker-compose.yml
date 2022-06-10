@@ -1,13 +1,16 @@
 version: '3'
 services:
+
   jinux2:
-    image: ${DOCKER_USER_ID}/jenkinstest
-    container_name: jinux2
-    
+    image: ufrl128/jenkinstest:latest
+    container_name: jinux
     build:
        context: .
-       
+
+  production:
     restart: always
     ports:
       - 80:80
+
+
 

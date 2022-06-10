@@ -3,7 +3,7 @@ services:
 
   jinux2:
     image: ${DOCKER_USER_ID}/jenkinstest:${BUILD_NUMBER}
-    container_name: jinux
+    container_name: jinux2
     build:
        context: .
 
